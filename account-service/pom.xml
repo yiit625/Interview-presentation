@@ -33,7 +33,6 @@
             <artifactId>spring-data-cassandra</artifactId>
         </dependency>
 
-
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -45,6 +44,7 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-tx</artifactId>
         </dependency>
+
 
         <dependency>
             <groupId>com.codahale.metrics</groupId>

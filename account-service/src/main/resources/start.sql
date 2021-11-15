@@ -11,4 +11,14 @@ CREATE TABLE emp(
                     emp_phone varint
 );
 
-select * from emp
+select * from emp;
+
+CREATE TABLE accounts(
+                         id varchar PRIMARY KEY,
+                         uname text,
+                         sname text,
+                         email text,
+                         pwd text,
+                         created_at date,
+                         is_active boolean,
+);
