@@ -37,9 +37,4 @@ public class AccountApi {
     public void delete(String id) {
         accountService.delete(id);
     }
-
-    @GetMapping
-    public ResponseEntity<Slice<AccountDto>> getAll(Pageable pageable) {
-        return ResponseEntity.ok(accountService.findAll(pageable));
-    }
 }

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Apache Cassandra - @localhost">
+  <database-model serializer="dbm" dbms="CASSANDRA" family-id="CASSANDRA" format-version="4.20">
+    <root id="1">
+      <ServerVersion>4.0.1</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="system">
+      <Replication>{&apos;class&apos;: &apos;org.apache.cassandra.locator.LocalStrategy&apos;}</Replication>
+    </schema>
+    <schema id="3" parent="1" name="system_auth">
+      <Replication>{&apos;class&apos;: &apos;org.apache.cassandra.locator.SimpleStrategy&apos;, &apos;replication_factor&apos;: &apos;1&apos;}</Replication>
+    </schema>
+    <schema id="4" parent="1" name="system_distributed">
+      <Replication>{&apos;class&apos;: &apos;org.apache.cassandra.locator.SimpleStrategy&apos;, &apos;replication_factor&apos;: &apos;3&apos;}</Replication>
+    </schema>
+    <schema id="5" parent="1" name="system_schema">
+      <Replication>{&apos;class&apos;: &apos;org.apache.cassandra.locator.LocalStrategy&apos;}</Replication>
+    </schema>
+    <schema id="6" parent="1" name="system_traces">
+      <Replication>{&apos;class&apos;: &apos;org.apache.cassandra.locator.SimpleStrategy&apos;, &apos;replication_factor&apos;: &apos;2&apos;}</Replication>
+    </schema>
+    <role id="7" parent="1" name="cassandra">
+      <SuperRole>1</SuperRole>
+      <CanLogin>1</CanLogin>
+    </role>
+  </database-model>
+</dataSource>

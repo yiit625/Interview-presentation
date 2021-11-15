@@ -14,6 +14,4 @@ public interface AccountService {
     AccountDto update(String id, AccountDto accountDto);
 
     void delete(String id);
-
-    Slice<AccountDto> findAll(Pageable pageable);
 }

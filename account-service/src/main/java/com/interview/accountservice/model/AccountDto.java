@@ -12,6 +12,7 @@ import lombok.Setter;
 public class AccountDto {
     private String id;
     private String username;
+    private String surname;
     private String email;
     private String passwd;
 }

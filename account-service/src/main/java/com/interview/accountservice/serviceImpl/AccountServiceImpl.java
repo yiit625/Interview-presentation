@@ -2,20 +2,26 @@ package com.interview.accountservice.serviceImpl;
 
 import com.interview.accountservice.entity.Account;
 import com.interview.accountservice.model.AccountDto;
+import com.interview.accountservice.repository.AccountRepository;
 import com.interview.accountservice.service.AccountService;
+import org.modelmapper.ModelMapper;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 import org.springframework.data.domain.Slice;
 
+import java.awt.print.Pageable;
 import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
 public class AccountServiceImpl implements AccountService {
 
-    private final AccountRepository accountRepository;
+    @Autowired
+    AccountRepository accountRepository;
+
     private final ModelMapper modelMapper;
 
 
@@ -38,8 +44,7 @@ public class AccountServiceImpl implements AccountService {
         Assert.isNull(id, "Id cannot be null");
         Optional<Account> account = accountRepository.findById(id);
         Account accountToUpdate = account.map(it -> {
-            it.setBirthDate(accountDto.getBirthDate());
-            it.setName(accountDto.getName());
+            it.setUsername(accountDto.getUsername());
             it.setSurname(accountDto.getSurname());
             return it;
         }).orElseThrow(IllegalArgumentException::new);
@@ -51,10 +56,5 @@ public class AccountServiceImpl implements AccountService {
         Account account = accountRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException());
         accountRepository.delete(account);
-    }
-
-    public Slice<AccountDto> findAll(Pageable pageable) {
-        Slice<Account> accounts = accountRepository.findAll(pageable);
-        return null;
     }
 }

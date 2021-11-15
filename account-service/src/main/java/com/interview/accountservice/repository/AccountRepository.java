@@ -1,6 +1,10 @@
 package com.interview.accountservice.repository;
 
 import com.interview.accountservice.entity.Account;
+import org.springframework.data.cassandra.repository.CassandraRepository;
+import org.springframework.stereotype.Repository;
 
-public class AccountRepository extends CassandraRepository<Account, String>{
+@Repository
+public interface AccountRepository extends CassandraRepository<Account, String> {
+
 }
