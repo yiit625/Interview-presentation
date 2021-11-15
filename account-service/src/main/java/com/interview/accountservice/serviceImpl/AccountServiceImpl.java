@@ -10,9 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
-import org.springframework.data.domain.Slice;
-
-import java.awt.print.Pageable;
 import java.util.Optional;
 
 @Service
@@ -27,7 +24,7 @@ public class AccountServiceImpl implements AccountService {
 
     public AccountDto get(String id) {
         Account account = accountRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException());
+                .orElseThrow(IllegalArgumentException::new);
         return modelMapper.map(account, AccountDto.class);
     }
 
@@ -54,7 +51,7 @@ public class AccountServiceImpl implements AccountService {
     @Transactional
     public void delete(String id) {
         Account account = accountRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException());
+                .orElseThrow(IllegalArgumentException::new);
         accountRepository.delete(account);
     }
 }
