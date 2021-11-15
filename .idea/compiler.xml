@@ -11,6 +11,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="account-service" target="11" />
+      <module name="Acrolinx" target="11" />
+      <module name="service-parent" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

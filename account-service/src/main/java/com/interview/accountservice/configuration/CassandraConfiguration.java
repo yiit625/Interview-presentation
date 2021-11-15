@@ -7,13 +7,11 @@ import org.springframework.data.cassandra.config.SchemaAction;
 import org.springframework.data.cassandra.repository.config.EnableCassandraRepositories;
 import org.springframework.data.cassandra.config.CassandraTemplateFactoryBean;
 
-import javax.annotation.Nonnull;
 
 @Configuration
 @EnableCassandraRepositories
 public class CassandraConfiguration extends AbstractCassandraConfiguration {
 
-    @Nonnull
     @Override
     protected String getKeyspaceName() {
         return "springcloud";
