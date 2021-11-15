@@ -1,6 +1,7 @@
 package com.interview.accountservice.configuration;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.cassandra.config.AbstractCassandraConfiguration;
 import org.springframework.data.cassandra.config.SchemaAction;
@@ -26,7 +27,7 @@ public class CassandraConfiguration extends AbstractCassandraConfiguration {
     protected String getKeyspaceName() {
         return keySpaceName;
     }
-    
+
     @Override
     protected int getPort() {
         return port;
@@ -43,6 +44,7 @@ public class CassandraConfiguration extends AbstractCassandraConfiguration {
     public SchemaAction getSchemaAction() {
         return SchemaAction.CREATE_IF_NOT_EXISTS;
     }
+
 
     @Nonnull
     @Override
