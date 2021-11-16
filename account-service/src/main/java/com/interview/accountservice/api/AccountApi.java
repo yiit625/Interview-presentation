@@ -4,8 +4,6 @@ import com.interview.accountservice.entity.Account;
 import com.interview.accountservice.model.AccountDto;
 import com.interview.accountservice.service.AccountService;
 import lombok.RequiredArgsConstructor;
-import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

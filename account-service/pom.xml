@@ -16,7 +16,6 @@
     <description>Account Service</description>
 
     <dependencies>
-
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-cassandra</artifactId>
@@ -55,6 +54,12 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
             <version>1.4.7.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.interview</groupId>
+            <artifactId>service-common</artifactId>
+            <version>${project.version}</version>
         </dependency>
 
     </dependencies>

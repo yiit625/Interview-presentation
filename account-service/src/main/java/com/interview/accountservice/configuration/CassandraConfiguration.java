@@ -11,34 +11,37 @@ import org.springframework.data.cassandra.repository.config.EnableCassandraRepos
 @EnableCassandraRepositories
 public class CassandraConfiguration extends AbstractCassandraConfiguration {
 
-    @Value("${spring.data.cassandra.contact.points}")
-    private String keySpaceName;
-
-    @Value("${spring.data.cassandra.port}")
-    private int port;
-
-    @Value("${spring.data.cassandra.keyspace.name}")
+    @Value("${spring.cassandra.contact.point}")
     private String contactPoint;
 
-    @Value("${spring.data.cassandra.username}")
+    @Value("${spring.cassandra.port}")
+    private int port;
+
+    @Value("${spring.cassandra.keyspace.name}")
+    private String keySpaceName;
+
+    @Value("${spring.cassandra.username}")
     private String username;
 
-    @Value("${spring.data.cassandra.password}")
+    @Value("${spring.cassandra.password}")
     private String password;
 
 
     @Override
     protected String getKeyspaceName() {
+        System.out.println("keySpaceName --> " + keySpaceName);
         return keySpaceName;
     }
 
     @Override
     protected int getPort() {
+        System.out.println("port --> " + port);
         return port;
     }
 
     @Override
     protected String getContactPoints() {
+        System.out.println("contactPoint --> " + contactPoint);
         return contactPoint;
     }
 
@@ -54,6 +57,8 @@ public class CassandraConfiguration extends AbstractCassandraConfiguration {
 
     @Override
     public CassandraClusterFactoryBean cluster() {
+        System.out.println("username --> " + username);
+        System.out.println("password --> " + password);
         CassandraClusterFactoryBean clusterFactoryBean = super.cluster();
         clusterFactoryBean.setUsername(username);
         clusterFactoryBean.setPassword(password);
