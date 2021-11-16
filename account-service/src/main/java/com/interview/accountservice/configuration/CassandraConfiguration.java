@@ -45,10 +45,10 @@ public class CassandraConfiguration extends AbstractCassandraConfiguration {
         return contactPoint;
     }
 
-    @Override
+/*    @Override
     public SchemaAction getSchemaAction() {
         return SchemaAction.CREATE_IF_NOT_EXISTS;
-    }
+    }*/
 
     @Override
     public String[] getEntityBasePackages() {
