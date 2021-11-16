@@ -56,12 +56,6 @@
             <version>1.4.7.RELEASE</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.interview</groupId>
-            <artifactId>service-common</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-
     </dependencies>
 
     <build>
