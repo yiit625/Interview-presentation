@@ -4,3 +4,11 @@ services:
     image: cassandra
     ports:
       - '9042:9042'
+
+  mysql:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: microservice-app
+    ports:
+      - '3306:3306'

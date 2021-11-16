@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>service-parent</artifactId>
         <groupId>com.interview</groupId>
@@ -10,10 +9,11 @@
         <relativePath>../service-parent/pom.xml</relativePath>
     </parent>
 
-    <artifactId>account-service</artifactId>
+    <modelVersion>4.0.0</modelVersion>
     <version>10.0.1</version>
-    <name>account-service</name>
-    <description>Account Service</description>
+    <artifactId>ticket-service</artifactId>
+    <name>ticket-service</name>
+    <description>Ticket Service</description>
 
     <dependencies>
         <dependency>
