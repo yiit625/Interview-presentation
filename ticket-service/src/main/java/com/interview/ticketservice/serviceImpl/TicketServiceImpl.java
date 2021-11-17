@@ -12,12 +12,14 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
+
 @Service
 @RequiredArgsConstructor
 public class TicketServiceImpl implements TicketService {
 
     private final TicketRepository ticketRepository;
- //   private final AccountServiceClient accountServiceClient;
+    //private final AccountServiceClient accountServiceClient;
 
     @Override
     public TicketDto save(TicketDto ticketDto) {
@@ -26,14 +28,16 @@ public class TicketServiceImpl implements TicketService {
             throw new IllegalArgumentException("Ticket Date can not be blank");
 
         Ticket ticket = new Ticket();
-        //     ResponseEntity<AccountDto> accountDtoResponseEntity = accountServiceClient.get(ticketDto.getAssignee());
+        //ResponseEntity<AccountDto> accountDtoResponseEntity = accountServiceClient.get(ticketDto.getAssignee());
 
         ticket.setDescription(ticketDto.getDescription());
         ticket.setNotes(ticketDto.getNotes());
         ticket.setTicketDate(ticketDto.getTicketDate());
         ticket.setTicketStatus(TicketStatus.valueOf(ticketDto.getTicketStatus()));
         ticket.setPriorityType(PriorityType.valueOf(ticketDto.getPriorityType()));
-        //   ticket.setAssignee(accountDtoResponseEntity.getBody().getId());
+        //ticket.setAssignee(accountDtoResponseEntity.getBody().getId());
+        ticket.setCretedAt(new Date());
+        ticket.setUpdatedAt(new Date());
 
         // mysql kaydet
         ticketRepository.save(ticket);

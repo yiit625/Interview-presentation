@@ -22,3 +22,17 @@ CREATE TABLE accounts(
                          created_at date,
                          is_active boolean,
 );
+
+
+use ticket;
+
+CREATE TABLE ticket (
+                        id VARCHAR(250) PRIMARY KEY,
+                        description VARCHAR(600),
+                        notes VARCHAR(1000),
+                        assignee VARCHAR(50),
+                        ticket_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                        priority_type INT(6),
+                        ticket_status INT(6)
+)
+
