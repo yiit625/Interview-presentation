@@ -5,25 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df89aa65-be03-4bcd-94ea-646d18e2024c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/service-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-common/src/main/java/com/interview/client/AccountServiceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-common/src/main/java/com/interview/client/dto/AccountDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-common/src/main/java/config/FeignConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/config/TicketConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/interview/accountservice/api/AccountApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/interview/accountservice/api/AccountApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/interview/accountservice/model/AccountDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/interview/accountservice/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/interview/accountservice/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/interview/accountservice/serviceImpl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/interview/accountservice/serviceImpl/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/TicketApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/TicketApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/serviceImpl/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/serviceImpl/TicketServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/TicketApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/TicketApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket-service/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/TicketApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/config/TicketConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/dto/TicketDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/entity/BaseEntityModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/entity/Ticket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/enums/PriorityType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/enums/TicketStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/repository/TicketRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/service/TicketService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/serviceImpl/TicketServiceImpl.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +184,7 @@
       <workItem from="1636998601669" duration="10773000" />
       <workItem from="1637071331544" duration="7475000" />
       <workItem from="1637079002937" duration="5700000" />
-      <workItem from="1637148856240" duration="5715000" />
+      <workItem from="1637148856240" duration="7248000" />
     </task>
     <servers />
   </component>

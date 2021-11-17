@@ -1,0 +1,3 @@
+com\interview\client\dto\AccountDto.class
+config\FeignConfig.class
+com\interview\client\AccountServiceClient.class
