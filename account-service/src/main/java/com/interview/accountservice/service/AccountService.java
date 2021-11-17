@@ -1,10 +1,8 @@
 package com.interview.accountservice.service;
 
 import com.interview.accountservice.entity.Account;
-import com.interview.accountservice.model.AccountDto;
-import org.springframework.data.domain.Slice;
+import com.interview.client.dto.AccountDto;
 
-import java.awt.print.Pageable;
 import java.util.List;
 
 public interface AccountService {

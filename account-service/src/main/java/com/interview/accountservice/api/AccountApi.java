@@ -1,8 +1,8 @@
 package com.interview.accountservice.api;
 
 import com.interview.accountservice.entity.Account;
-import com.interview.accountservice.model.AccountDto;
 import com.interview.accountservice.service.AccountService;
+import com.interview.client.dto.AccountDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;

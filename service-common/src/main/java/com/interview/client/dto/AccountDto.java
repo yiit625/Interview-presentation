@@ -1,4 +1,4 @@
-package com.interview.accountservice.model;
+package com.interview.client.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

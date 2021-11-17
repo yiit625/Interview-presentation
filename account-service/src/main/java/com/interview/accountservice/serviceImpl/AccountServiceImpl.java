@@ -1,9 +1,9 @@
 package com.interview.accountservice.serviceImpl;
 
 import com.interview.accountservice.entity.Account;
-import com.interview.accountservice.model.AccountDto;
 import com.interview.accountservice.repository.AccountRepository;
 import com.interview.accountservice.service.AccountService;
+import com.interview.client.dto.AccountDto;
 import org.modelmapper.ModelMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
