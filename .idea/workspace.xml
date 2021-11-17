@@ -6,9 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="df89aa65-be03-4bcd-94ea-646d18e2024c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/resources/start.sql" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/resources/start.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/entity/BaseEntityModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/entity/BaseEntityModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-common/target/service-common-10.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service-common/target/service-common-10.0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/TicketApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/TicketApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/serviceImpl/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/serviceImpl/TicketServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/config/TicketConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/config/TicketConfiguration.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/serviceImpl/TicketServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/serviceImpl/TicketServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -179,7 +182,7 @@
       <workItem from="1637079002937" duration="5700000" />
       <workItem from="1637148856240" duration="8079000" />
       <workItem from="1637159775974" duration="68000" />
-      <workItem from="1637170951202" duration="2924000" />
+      <workItem from="1637170951202" duration="6227000" />
     </task>
     <servers />
   </component>
@@ -200,13 +203,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/serviceImpl/TicketServiceImpl.java</url>
-          <line>26</line>
+          <line>29</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/api/TicketApi.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
