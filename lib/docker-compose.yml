@@ -12,3 +12,12 @@ services:
       MYSQL_ROOT_PASSWORD: microservice-app
     ports:
       - '3306:3306'
+
+  msrabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - '5672:5672'
+      - '15672:15672'
+    environment:
+      - RABBITMQ_DEFAULT_USER=interview
+      - RABBITMQ_DEFAULT_PASS=interview

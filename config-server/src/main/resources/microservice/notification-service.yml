@@ -1,0 +1,19 @@
+server:
+  port: 8503
+
+eureka:
+  client:
+    instance:
+      hostname: localhost
+    serviceUrl:
+      defaultZone: http://localhost:8500/eureka/
+
+spring:
+  rabbitmq:
+    username: interview
+    password: interview
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: msqueue

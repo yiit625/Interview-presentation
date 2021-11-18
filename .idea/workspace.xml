@@ -5,14 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df89aa65-be03-4bcd-94ea-646d18e2024c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice/notification-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/interview/notification/NotificationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/interview/notification/NotificationDistributionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-common/src/main/java/com/interview/client/dto/TicketNotification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/service/TicketNotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/serviceImpl/TicketNotificationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-common/target/service-common-10.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service-common/target/service-common-10.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/TicketApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/TicketApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/serviceImpl/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/serviceImpl/TicketServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/config/TicketConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/config/TicketConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/serviceImpl/TicketServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/serviceImpl/TicketServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/microservice/ticket-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice/ticket-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/target/classes/microservice/ticket-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/target/classes/microservice/ticket-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lib/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,19 +80,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ConfigServerApplication">
-    <configuration name="AccountServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.interview.accountservice.AccountServiceApplication" />
-      <module name="account-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.interview.accountservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -128,6 +124,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NotificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="notification-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.interview.notification.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.interview.notification.NotificationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TicketApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ticket-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.interview.ticketservice.TicketApplication" />
@@ -143,12 +152,12 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="lib.mysql: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="lib.msrabbitmq: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="mysql" />
+              <option value="msrabbitmq" />
             </list>
           </option>
           <option name="sourceFilePath" value="lib/docker-compose.yml" />
@@ -158,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.NotificationApplication" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
         <item itemvalue="Spring Boot.ConfigServerApplication" />
+        <item itemvalue="Docker.lib.msrabbitmq: Compose Deployment" />
         <item itemvalue="Docker.lib: Compose Deployment" />
-        <item itemvalue="Docker.lib.mysql: Compose Deployment" />
-        <item itemvalue="Application.AccountServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +191,9 @@
       <workItem from="1637079002937" duration="5700000" />
       <workItem from="1637148856240" duration="8079000" />
       <workItem from="1637159775974" duration="68000" />
-      <workItem from="1637170951202" duration="6227000" />
+      <workItem from="1637170951202" duration="6655000" />
+      <workItem from="1637227253392" duration="1233000" />
+      <workItem from="1637248100832" duration="2570000" />
     </task>
     <servers />
   </component>

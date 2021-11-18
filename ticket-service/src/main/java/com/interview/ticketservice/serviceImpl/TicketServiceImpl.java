@@ -7,6 +7,7 @@ import com.interview.ticketservice.entity.Ticket;
 import com.interview.ticketservice.enums.PriorityType;
 import com.interview.ticketservice.enums.TicketStatus;
 import com.interview.ticketservice.repository.TicketRepository;
+import com.interview.ticketservice.service.TicketNotificationService;
 import com.interview.ticketservice.service.TicketService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,8 @@ public class TicketServiceImpl implements TicketService {
 
     @Autowired
     TicketRepository ticketRepository;
+
+    private final TicketNotificationService ticketNotificationService;
 
     //private final AccountServiceClient accountServiceClient;
 
@@ -44,6 +47,9 @@ public class TicketServiceImpl implements TicketService {
 
         // mysql kaydet
         ticketRepository.save(ticket);
+
+        // Kuyruga notification yaz
+        ticketNotificationService.sendToQueue(ticket);
         return ticketDto;
     }
 
