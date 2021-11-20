@@ -5,6 +5,7 @@ import org.springframework.data.cassandra.core.mapping.Column;
 import org.springframework.data.cassandra.core.mapping.PrimaryKey;
 import org.springframework.data.cassandra.core.mapping.Table;
 
+import java.security.Timestamp;
 import java.util.Date;
 import java.util.UUID;
 
@@ -34,6 +35,9 @@ public class Account {
 
     @Column(value = "created_at")
     private Date createdAt;
+
+    @Column(value = "updated_at")
+    private Date updateAt;
 
     @Column(value = "is_active")
     private Boolean active;

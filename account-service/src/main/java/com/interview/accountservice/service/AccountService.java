@@ -11,9 +11,9 @@ public interface AccountService {
 
     AccountDto get(String id);
 
-    AccountDto save(AccountDto accountDto);
+    Account save(AccountDto accountDto);
 
-    AccountDto update(AccountDto accountDto);
+    Account update(AccountDto accountDto);
 
     void delete(String id);
 

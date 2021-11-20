@@ -26,14 +26,14 @@ public class AccountApi {
     @PostMapping(value = "/create",
             consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<AccountDto> save(@RequestBody AccountDto account) {
+    public ResponseEntity<Account> save(@RequestBody AccountDto account) {
         return ResponseEntity.ok(accountService.save(account));
     }
 
     @PutMapping(value = "/update",
             consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<AccountDto> update(@RequestBody AccountDto account) {
+    public ResponseEntity<Account> update(@RequestBody AccountDto account) {
         return ResponseEntity.ok(accountService.update(account));
     }
 

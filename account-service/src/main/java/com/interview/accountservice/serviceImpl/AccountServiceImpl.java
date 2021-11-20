@@ -7,12 +7,10 @@ import com.interview.client.dto.AccountDto;
 import org.modelmapper.ModelMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.cassandra.core.query.CassandraPageRequest;
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Slice;
 import org.springframework.stereotype.Service;
-
+import java.util.Date;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -30,22 +28,23 @@ public class AccountServiceImpl implements AccountService {
     }
 
     @Override
-    public AccountDto save(AccountDto accountDto) {
+    public Account save(AccountDto accountDto) {
         Account account = modelMapper.map(accountDto, Account.class);
-        account = accountRepository.save(account);
-        accountDto.setId(account.getId());
-        return accountDto;
+        account.setCreatedAt(new Date());
+        account.setUpdateAt(new Date());
+        return accountRepository.save(account);
     }
 
     @Override
-    public AccountDto update(AccountDto accountDto) {
-        Optional<Account> account = accountRepository.findById(accountDto.getId());
-        Account accountToUpdate = account.map(it -> {
-            it.setUsername(accountDto.getUsername());
-            it.setSurname(accountDto.getSurname());
-            return it;
-        }).orElseThrow(IllegalArgumentException::new);
-        return modelMapper.map(accountRepository.save(accountToUpdate), AccountDto.class);
+    public Account update(AccountDto accountDto) {
+        Account account = accountRepository.findById(accountDto.getId()).orElseThrow(IllegalArgumentException::new);
+        account.setUsername(accountDto.getUsername());
+        account.setSurname(accountDto.getSurname());
+        account.setPasswd(accountDto.getPasswd());
+        account.setEmail(accountDto.getEmail());
+        account.setActive(accountDto.getActive());
+        account.setUpdateAt(new Date());
+        return accountRepository.save(account);
     }
 
     @Override

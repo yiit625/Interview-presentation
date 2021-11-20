@@ -43,7 +43,7 @@
     </column>
     <column id="12" parent="9" name="created_at">
       <Position>2</Position>
-      <DataType>date|0s</DataType>
+      <DataType>timestamp|0s</DataType>
     </column>
     <column id="13" parent="9" name="email">
       <Position>3</Position>
@@ -64,6 +64,10 @@
     <column id="17" parent="9" name="uname">
       <Position>7</Position>
       <DataType>text|0s</DataType>
+    </column>
+    <column id="18" parent="9" name="updated_at">
+      <Position>8</Position>
+      <DataType>timestamp|0s</DataType>
     </column>
   </database-model>
 </dataSource>

@@ -15,4 +15,5 @@ public class AccountDto {
     private String surname;
     private String email;
     private String passwd;
+    private Boolean active;
 }

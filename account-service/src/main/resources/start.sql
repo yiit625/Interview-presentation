@@ -19,8 +19,9 @@ CREATE TABLE accounts(
                          sname text,
                          email text,
                          pwd text,
-                         created_at date,
+                         created_at timestamp,
                          is_active boolean,
+                         updated_at timestamp,
 );
 
 
