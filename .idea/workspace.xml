@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df89aa65-be03-4bcd-94ea-646d18e2024c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-common/src/main/java/config/FeignConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-common/src/main/java/com/interview/client/config/FeignConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-common/target/classes/config/FeignConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/config/TicketConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/config/TicketConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/serviceImpl/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/serviceImpl/TicketServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/config/TicketConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/config/TicketConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/serviceImpl/TicketServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/serviceImpl/TicketServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/interview/accountservice/api/AccountApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/interview/accountservice/api/AccountApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/interview/accountservice/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/interview/accountservice/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/interview/accountservice/serviceImpl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/interview/accountservice/serviceImpl/AccountServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +67,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConfigServerApplication">
+  <component name="RunManager" selected="Spring Boot.TicketApplication">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -187,7 +184,7 @@
       <workItem from="1637170951202" duration="6655000" />
       <workItem from="1637227253392" duration="1233000" />
       <workItem from="1637248100832" duration="7209000" />
-      <workItem from="1637397879097" duration="619000" />
+      <workItem from="1637397879097" duration="3470000" />
     </task>
     <servers />
   </component>

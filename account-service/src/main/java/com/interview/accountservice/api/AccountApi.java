@@ -48,4 +48,10 @@ public class AccountApi {
     public ResponseEntity<List<Account>> getAll() {
         return ResponseEntity.ok(accountService.findAll());
     }
+
+    @GetMapping("/all-pagination")
+    public ResponseEntity<List<Account>> getPaginated(@RequestParam(value = "page") Integer page,
+                                                      @RequestParam(value = "size") Integer size) {
+        return ResponseEntity.ok(accountService.ListAll(page, size));
+    }
 }

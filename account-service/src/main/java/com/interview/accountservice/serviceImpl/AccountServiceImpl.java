@@ -6,6 +6,9 @@ import com.interview.accountservice.service.AccountService;
 import com.interview.client.dto.AccountDto;
 import org.modelmapper.ModelMapper;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.cassandra.core.query.CassandraPageRequest;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Slice;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -55,5 +58,16 @@ public class AccountServiceImpl implements AccountService {
     @Override
     public List<Account> findAll() {
         return accountRepository.findAll();
+    }
+
+    @Override
+    public List<Account> ListAll(Integer page, Integer size) {
+        int currpage = 0;
+        Slice<Account> slice = accountRepository.findAll(CassandraPageRequest.first(size));
+        while(slice.hasNext() && currpage < page) {
+            slice = accountRepository.findAll(slice.nextPageable());
+            currpage++;
+        }
+        return slice.getContent();
     }
 }
