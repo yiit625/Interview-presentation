@@ -19,8 +19,10 @@ public class AccountApi {
 
     private final AccountService accountService;
 
-    @GetMapping("/{id}")
-    public ResponseEntity<AccountDto> get(@PathVariable("id") String id) {
+    @GetMapping(value = "/{id}",
+            consumes = MediaType.APPLICATION_JSON_VALUE,
+            produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<AccountDto> get(@PathVariable("id") UUID id) {
         return ResponseEntity.ok(accountService.get(id));
     }
 
@@ -50,7 +52,9 @@ public class AccountApi {
         return ResponseEntity.ok(accountService.findAll());
     }
 
-    @GetMapping("/all-pagination")
+    @GetMapping(value = "/all-pagination",
+            consumes = MediaType.APPLICATION_JSON_VALUE,
+            produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<Account>> getPaginated(@RequestParam(value = "page") Integer page,
                                                       @RequestParam(value = "size") Integer size) {
         return ResponseEntity.ok(accountService.ListAll(page, size));

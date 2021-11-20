@@ -25,9 +25,8 @@ public class AccountServiceImpl implements AccountService {
     private final ModelMapper modelMapper;
 
 
-    public AccountDto get(String id) {
-        Account account = accountRepository.findById(id)
-                .orElseThrow(IllegalArgumentException::new);
+    public AccountDto get(UUID id) {
+        Account account = accountRepository.findById(id);
         return modelMapper.map(account, AccountDto.class);
     }
 

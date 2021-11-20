@@ -10,7 +10,7 @@ import java.util.UUID;
 
 public interface AccountService {
 
-    AccountDto get(String id);
+    AccountDto get(UUID id);
 
     Account save(AccountDto accountDto);
 
