@@ -1,5 +1,6 @@
 package com.interview.accountservice.serviceImpl;
 
+import com.datastax.driver.core.utils.UUIDs;
 import com.interview.accountservice.entity.Account;
 import com.interview.accountservice.repository.AccountRepository;
 import com.interview.accountservice.service.AccountService;
@@ -30,6 +31,7 @@ public class AccountServiceImpl implements AccountService {
     @Override
     public Account save(AccountDto accountDto) {
         Account account = modelMapper.map(accountDto, Account.class);
+        account.setId(UUIDs.timeBased());
         account.setCreatedAt(new Date());
         account.setUpdateAt(new Date());
         return accountRepository.save(account);
@@ -37,7 +39,7 @@ public class AccountServiceImpl implements AccountService {
 
     @Override
     public Account update(AccountDto accountDto) {
-        Account account = accountRepository.findById(accountDto.getId()).orElseThrow(IllegalArgumentException::new);
+        Account account = accountRepository.findById(accountDto.getId());
         account.setUsername(accountDto.getUsername());
         account.setSurname(accountDto.getSurname());
         account.setPasswd(accountDto.getPasswd());

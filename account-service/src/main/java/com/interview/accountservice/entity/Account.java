@@ -1,11 +1,10 @@
 package com.interview.accountservice.entity;
 
+import com.datastax.driver.core.DataType;
 import lombok.*;
-import org.springframework.data.cassandra.core.mapping.Column;
-import org.springframework.data.cassandra.core.mapping.PrimaryKey;
-import org.springframework.data.cassandra.core.mapping.Table;
+import org.springframework.data.cassandra.core.cql.PrimaryKeyType;
+import org.springframework.data.cassandra.core.mapping.*;
 
-import java.security.Timestamp;
 import java.util.Date;
 import java.util.UUID;
 
@@ -13,13 +12,13 @@ import java.util.UUID;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode(of = {"id"})
 @ToString
 @Table(value = "accounts")
 public class Account {
 
-    @PrimaryKey
-    private String id = UUID.randomUUID().toString();
+    @PrimaryKeyColumn(name = "id", ordinal = 0, type = PrimaryKeyType.PARTITIONED)
+    @CassandraType(type = DataType.Name.UUID)
+    private UUID Id;
 
     @Column(value = "uname")
     private String username;
@@ -41,5 +40,4 @@ public class Account {
 
     @Column(value = "is_active")
     private Boolean active;
-
 }
