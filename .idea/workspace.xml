@@ -5,23 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df89aa65-be03-4bcd-94ea-646d18e2024c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice/notification-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/interview/notification/NotificationApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/interview/notification/NotificationDistributionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-common/src/main/java/com/interview/client/dto/TicketNotification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/service/TicketNotificationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/serviceImpl/TicketNotificationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/microservice/ticket-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice/ticket-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/target/classes/microservice/ticket-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/target/classes/microservice/ticket-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lib/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-common/src/main/java/config/FeignConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-common/src/main/java/com/interview/client/config/FeignConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-common/target/classes/config/FeignConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/config/TicketConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/config/TicketConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/serviceImpl/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/serviceImpl/TicketServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/config/TicketConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/config/TicketConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/serviceImpl/TicketServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/serviceImpl/TicketServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,13 +71,15 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ConfigServerApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -193,7 +186,8 @@
       <workItem from="1637159775974" duration="68000" />
       <workItem from="1637170951202" duration="6655000" />
       <workItem from="1637227253392" duration="1233000" />
-      <workItem from="1637248100832" duration="2570000" />
+      <workItem from="1637248100832" duration="7209000" />
+      <workItem from="1637397879097" duration="619000" />
     </task>
     <servers />
   </component>
@@ -214,7 +208,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/serviceImpl/TicketServiceImpl.java</url>
-          <line>29</line>
+          <line>32</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

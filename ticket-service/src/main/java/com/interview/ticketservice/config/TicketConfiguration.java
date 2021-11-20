@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @Configuration
 @EnableJpaRepositories("com.interview")
-@ComponentScan("com.interview")
+@ComponentScan("com.interview.*")
 public class TicketConfiguration {
 
     @Bean

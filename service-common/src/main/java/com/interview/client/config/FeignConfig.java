@@ -1,10 +1,10 @@
-package config;
+package com.interview.client.config;
 
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@EnableFeignClients
+@EnableFeignClients("com.interview.*")
 public class FeignConfig {
 
 }
