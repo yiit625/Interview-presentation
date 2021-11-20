@@ -1,6 +1,7 @@
 package com.interview.accountservice.entity;
 
 import com.datastax.driver.core.DataType;
+import com.interview.accountservice.enums.RoleEnums;
 import lombok.*;
 import org.springframework.data.cassandra.core.cql.PrimaryKeyType;
 import org.springframework.data.cassandra.core.mapping.*;
@@ -40,4 +41,7 @@ public class Account {
 
     @Column(value = "is_active")
     private Boolean active;
+
+    @Column(value = "roles")
+    private RoleEnums roles;
 }

@@ -15,6 +15,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
+import java.util.Objects;
 
 @Service
 @RequiredArgsConstructor
@@ -41,7 +42,7 @@ public class TicketServiceImpl implements TicketService {
         ticket.setTicketDate(ticketDto.getTicketDate());
         ticket.setTicketStatus(TicketStatus.valueOf(ticketDto.getTicketStatus()));
         ticket.setPriorityType(PriorityType.valueOf(ticketDto.getPriorityType()));
-        ticket.setAssignee(accountDtoResponseEntity.getBody().getId());
+        ticket.setAssignee(String.valueOf(Objects.requireNonNull(accountDtoResponseEntity.getBody()).getId()));
         ticket.setCretedAt(new Date());
         ticket.setUpdatedAt(new Date());
 

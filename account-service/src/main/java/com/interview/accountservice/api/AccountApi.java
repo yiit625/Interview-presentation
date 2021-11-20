@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/account")
@@ -40,7 +41,7 @@ public class AccountApi {
     @DeleteMapping(value = "/delete/{id}",
             consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE)
-    public void delete(@PathVariable("id") String id) {
+    public void delete(@PathVariable("id") UUID id) {
         accountService.delete(id);
     }
 

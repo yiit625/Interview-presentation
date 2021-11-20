@@ -14,7 +14,7 @@ CREATE TABLE emp(
 select * from emp;
 
 CREATE TABLE accounts(
-                         id varchar PRIMARY KEY,
+                         id uuid PRIMARY KEY,
                          uname text,
                          sname text,
                          email text,
@@ -22,6 +22,12 @@ CREATE TABLE accounts(
                          created_at timestamp,
                          is_active boolean,
                          updated_at timestamp,
+                         roles text,
+);
+
+CREATE TABLE roles(
+                         id uuid PRIMARY KEY,
+                         roles text,
 );
 
 

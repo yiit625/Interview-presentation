@@ -57,16 +57,20 @@
       <Position>5</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="16" parent="9" name="sname">
+    <column id="16" parent="9" name="roles">
       <Position>6</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="17" parent="9" name="uname">
+    <column id="17" parent="9" name="sname">
       <Position>7</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="18" parent="9" name="updated_at">
+    <column id="18" parent="9" name="uname">
       <Position>8</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="19" parent="9" name="updated_at">
+      <Position>9</Position>
       <DataType>timestamp|0s</DataType>
     </column>
   </database-model>

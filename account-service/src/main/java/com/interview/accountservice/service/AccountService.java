@@ -6,6 +6,7 @@ import org.springframework.data.domain.Page;
 
 import java.awt.print.Pageable;
 import java.util.List;
+import java.util.UUID;
 
 public interface AccountService {
 
@@ -15,7 +16,7 @@ public interface AccountService {
 
     Account update(AccountDto accountDto);
 
-    void delete(String id);
+    void delete(UUID id);
 
     List<Account> findAll();
 

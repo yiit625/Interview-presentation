@@ -18,4 +18,5 @@ public class AccountDto {
     private String email;
     private String passwd;
     private Boolean active;
+    private String role;
 }
