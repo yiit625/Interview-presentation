@@ -33,45 +33,76 @@
       <DclocalReadRepairChance>0.0</DclocalReadRepairChance>
       <SpeculativeRetry>99p</SpeculativeRetry>
     </table>
-    <key id="10" parent="9" name="primary key">
+    <table id="10" parent="2" name="emp">
+      <Caching>{&apos;keys&apos;: &apos;ALL&apos;, &apos;rows_per_partition&apos;: &apos;NONE&apos;}</Caching>
+      <Compaction>{&apos;class&apos;: &apos;org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy&apos;, &apos;max_threshold&apos;: &apos;32&apos;, &apos;min_threshold&apos;: &apos;4&apos;}</Compaction>
+      <Compression>{&apos;chunk_length_in_kb&apos;: &apos;16&apos;, &apos;class&apos;: &apos;org.apache.cassandra.io.compress.LZ4Compressor&apos;}</Compression>
+      <DclocalReadRepairChance>0.0</DclocalReadRepairChance>
+      <SpeculativeRetry>99p</SpeculativeRetry>
+    </table>
+    <key id="11" parent="9" name="primary key">
       <Columns>id
 </Columns>
     </key>
-    <column id="11" parent="9" name="id">
+    <column id="12" parent="9" name="id">
       <Position>1</Position>
       <DataType>uuid|0s</DataType>
     </column>
-    <column id="12" parent="9" name="created_at">
+    <column id="13" parent="9" name="created_at">
       <Position>2</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <column id="13" parent="9" name="email">
+    <column id="14" parent="9" name="email">
       <Position>3</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="14" parent="9" name="is_active">
+    <column id="15" parent="9" name="is_active">
       <Position>4</Position>
       <DataType>boolean|0s</DataType>
     </column>
-    <column id="15" parent="9" name="pwd">
+    <column id="16" parent="9" name="pwd">
       <Position>5</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="16" parent="9" name="roles">
+    <column id="17" parent="9" name="roles">
       <Position>6</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="17" parent="9" name="sname">
+    <column id="18" parent="9" name="sname">
       <Position>7</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="18" parent="9" name="uname">
+    <column id="19" parent="9" name="uname">
       <Position>8</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="19" parent="9" name="updated_at">
+    <column id="20" parent="9" name="updated_at">
       <Position>9</Position>
       <DataType>timestamp|0s</DataType>
+    </column>
+    <key id="21" parent="10" name="primary key">
+      <Columns>emp_id
+</Columns>
+    </key>
+    <column id="22" parent="10" name="emp_id">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="23" parent="10" name="emp_city">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="24" parent="10" name="emp_name">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="25" parent="10" name="emp_phone">
+      <Position>4</Position>
+      <DataType>varint|0s</DataType>
+    </column>
+    <column id="26" parent="10" name="emp_sal">
+      <Position>5</Position>
+      <DataType>varint|0s</DataType>
     </column>
   </database-model>
 </dataSource>

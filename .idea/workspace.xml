@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df89aa65-be03-4bcd-94ea-646d18e2024c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/interview/accountservice/api/AccountApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/interview/accountservice/api/AccountApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cassandra/docker-entrypoint-initdb/init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql/lib/sql/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Acrolinx.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Acrolinx.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8fcc607a-6c05-4bd6-877c-a3cd737008fc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8fcc607a-6c05-4bd6-877c-a3cd737008fc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lib/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/serviceImpl/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/serviceImpl/TicketServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/serviceImpl/TicketServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/target/classes/com/interview/ticketservice/serviceImpl/TicketServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +40,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DatabaseDriversLRU" value="cassandra" />
+    <property name="DatabaseDriversLRU" value="cassandra&#10;mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -41,7 +50,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../micro-service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15625" />
     <property name="project.structure.side.proportion" value="0.42526072" />
@@ -49,6 +58,15 @@
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Documents\Interview-presentation" />
+      <recent name="C:\Users\User\Documents\Interview-presentation\lib" />
+      <recent name="C:\Users\User\Documents\Interview-presentation\mysql\lib\sql" />
+      <recent name="C:\Users\User\Documents\Interview-presentation\mysql\lib" />
+      <recent name="C:\Users\User\Documents\Interview-presentation\mysql\data\application" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -63,16 +81,14 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AccountServiceApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Docker.lib.mysql: Compose Deployment">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -138,12 +154,12 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="lib.msrabbitmq: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="lib.mysql: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="msrabbitmq" />
+              <option value="mysql" />
             </list>
           </option>
           <option name="sourceFilePath" value="lib/docker-compose.yml" />
@@ -153,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.lib: Compose Deployment" />
+        <item itemvalue="Docker.lib.mysql: Compose Deployment" />
         <item itemvalue="Spring Boot.NotificationApplication" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
         <item itemvalue="Spring Boot.ConfigServerApplication" />
-        <item itemvalue="Docker.lib.msrabbitmq: Compose Deployment" />
-        <item itemvalue="Docker.lib: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -181,6 +197,7 @@
       <workItem from="1637227253392" duration="1233000" />
       <workItem from="1637248100832" duration="7209000" />
       <workItem from="1637397879097" duration="14424000" />
+      <workItem from="1669404199610" duration="12295000" />
     </task>
     <servers />
   </component>
@@ -195,16 +212,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ticket-service/src/main/java/com/interview/ticketservice/serviceImpl/TicketServiceImpl.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

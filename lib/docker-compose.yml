@@ -12,6 +12,8 @@ services:
       MYSQL_ROOT_PASSWORD: microservice-app
     ports:
       - '3306:3306'
+    volumes:
+      - ./mysql/lib/sql:/docker-entrypoint-initdb.d
 
   msrabbitmq:
     image: rabbitmq:3-management

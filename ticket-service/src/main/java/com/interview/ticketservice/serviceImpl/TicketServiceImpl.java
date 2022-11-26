@@ -35,14 +35,14 @@ public class TicketServiceImpl implements TicketService {
             throw new IllegalArgumentException("Ticket Date can not be blank");
 
         Ticket ticket = new Ticket();
-        ResponseEntity<AccountDto> accountDtoResponseEntity = accountForFeign.get(ticketDto.getAssignee());
-
+        /* ResponseEntity<AccountDto> accountDtoResponseEntity = accountForFeign.get(ticketDto.getAssignee());
+         */
         ticket.setDescription(ticketDto.getDescription());
         ticket.setNotes(ticketDto.getNotes());
         ticket.setTicketDate(ticketDto.getTicketDate());
         ticket.setTicketStatus(TicketStatus.valueOf(ticketDto.getTicketStatus()));
         ticket.setPriorityType(PriorityType.valueOf(ticketDto.getPriorityType()));
-        ticket.setAssignee(String.valueOf(Objects.requireNonNull(accountDtoResponseEntity.getBody()).getId()));
+        // ticket.setAssignee(String.valueOf(Objects.requireNonNull(accountDtoResponseEntity.getBody()).getId()));
         ticket.setCretedAt(new Date());
         ticket.setUpdatedAt(new Date());
 
